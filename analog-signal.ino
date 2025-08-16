@@ -30,14 +30,15 @@ void loop() {
     digitalWrite(led[1], LOW);
     digitalWrite(led[2], LOW);
   }
-  else if ((temperature >= 51) and (temperature <= 80)) {
+  else if ((temperature > 50) and (temperature <= 80)) {
     digitalWrite(led[0], LOW);
     digitalWrite(led[1], HIGH);
     digitalWrite(led[2], LOW);
   }
-  else if (temperature >= 81) {
+  else if (temperature > 80) {
     digitalWrite(led[0], LOW);
     digitalWrite(led[1], LOW);
     digitalWrite(led[2], HIGH);
   }
 }
+
